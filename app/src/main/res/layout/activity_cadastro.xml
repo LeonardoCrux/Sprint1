@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".MainActivity">
-
+    tools:context=".Cadastro">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="273dp"
         android:layout_height="161dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="36dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,35 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/logo" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="406dp"
-        android:layout_height="23dp"
-        android:layout_marginBottom="12dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
-
-
-        <ImageView
-            android:id="@+id/facei"
-            android:layout_width="29dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="90dp"
-            app:srcCompat="@drawable/facee" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="169dp"
-            android:layout_height="19dp"
-            android:background="@color/colorPrimaryDark"
-            android:text="ENTRAR PELO FACEBOOK"
-            android:textColor="@color/branco" />
-
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -59,17 +30,6 @@
         tools:layout_editor_absoluteY="251dp"
         tools:ignore="MissingConstraints">
 
-
-
-
-        <TextView
-            android:layout_width="58dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="10dp"
-            android:hint="ou"
-            android:textColorHint="@color/branco"/>
 
         <EditText
             android:layout_width="300dp"
@@ -93,17 +53,17 @@
         </EditText>
 
 
-        <android.support.v7.widget.SwitchCompat
-            android:id="@+id/manterlogado"
-            android:layout_width="141dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="220dp"
-            android:background="@color/colorPrimary"
-            android:text="   MANTER LOGADO"
-            android:textColor="@color/branco"
-            android:textOff="yep"
-            android:textOn="nope"
-            android:textSize="10sp" />
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/cinza"
+            android:hint="  Confirme a Senha"
+            android:textColorHint="@color/branco">
+
+        </EditText>
 
         <Button
             android:layout_width="70dp"
@@ -111,18 +71,12 @@
             android:layout_marginLeft="170dp"
             android:layout_marginTop="40dp"
             android:background="@color/colorPrimary"
-            android:text="LOGIN"
+            android:text="PRONTO"
             android:textColor="@color/branco" />
 
 
-        <Button
-            android:id="@+id/cadastro"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginTop="100dp"
-            android:background="@color/colorPrimaryDark"
-            android:text="CADASTRE-SE AQUI"
-            android:textColor="@color/branco" />
     </LinearLayout>
+
+
 
 </android.support.constraint.ConstraintLayout>
