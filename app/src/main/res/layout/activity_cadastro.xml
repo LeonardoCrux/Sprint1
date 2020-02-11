@@ -7,31 +7,35 @@
     android:background="@color/colorPrimaryDark"
     tools:context=".Cadastro">
 
+    //id colocado nos componentes
+
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logoTrunflix"
         android:layout_width="273dp"
         android:layout_height="161dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="409dp"
-        android:layout_height="646dp"
+        android:layout_height="409dp"
+        android:layout_marginBottom="72dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="251dp"
         tools:ignore="MissingConstraints">
 
 
+        //EditText não foram alterados p/ TextInputLayout por falta de tempo
         <EditText
+            android:id="@+id/inputEmail"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginLeft="60dp"
@@ -42,6 +46,7 @@
         </EditText>
 
         <EditText
+            android:id="@+id/inputSenha"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginLeft="60dp"
@@ -54,7 +59,7 @@
 
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/inputConfirmarSenha"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginLeft="60dp"
@@ -76,7 +81,6 @@
 
 
     </LinearLayout>
-
 
 
 </android.support.constraint.ConstraintLayout>
